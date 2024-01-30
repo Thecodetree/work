@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <Style>
+        body {font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            height:auto;
+            margin: 0;}
+        form {text-align: center;}
+    </Style>
+</head>
+<body>
+    <form id="loginForm">
+        <label
+        for="username">Username:</label>
+            <input type="text"
+            id="username" name="username" required> <br><br>
+
+            <label for="password">password:</label>
+                <input type="password"
+                id="password" name="password" required> <br> <br>
+
+                <button type="button" onclick="validateLogin()">Please Login</button>
+    </form>
+
+    <script>
+        function validateLogin() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if (username === "yourUsername" && password === "yourPassword")
+            {alert("Login successful!");}
+            else {alert("wrong username or password typed. Please try again.");
+            }
+        }
+    </script>
+
+</body>
+</html>
