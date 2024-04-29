@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example of the DOM</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Good afterenoon DOM!</h1>
+        <p>This is what a paragraph tag looks like.</p>
+        <button id="mybutton">Click me lots</button>
+    </div>
+
+    <script>
+        //Accessing elements in the DOM
+        const container = document.getElementById
+        ('container');
+        const heading = document.querySelector("h1");
+        const paragraph = document.getElementById("myButton");
+            //Modifying content
+            
+            heading.textContent = "Welcome to the DOM Party!";
+
+            paragraph.textContent = "This paragraph has been modified.";
+
+                //Adding event listener
+
+                button.addEventListener('click', function() {
+                    alert('You have clicked the button!');
+                });
+    </script>
+</body>
+</html>
